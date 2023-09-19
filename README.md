@@ -19,7 +19,7 @@ Mindestens 1 System Fine-Tuned
 
 To perform the tasks in a chronological and logical order, follow these bullet points:
 
-## Plan
+## Plan
 
 1. **Form a Group of 2**
     - Find a partner to collaborate with on the project

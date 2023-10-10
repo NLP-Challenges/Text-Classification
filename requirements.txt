@@ -1,0 +1,5 @@
+huggingface_hub==0.16.4
+pandas==2.1.1
+pytorch_lightning==2.0.9.post0
+torch==2.1.0
+transformers==4.34.0

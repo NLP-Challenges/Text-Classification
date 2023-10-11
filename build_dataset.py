@@ -1,6 +1,7 @@
 """
 Execute this script to get train and test split (located in data folder).
-The split is done with respect to the number of words in the 'text' column and class (all classes have the same presence in the split)
+The split is done with respect to the number of words in the 'text' column and class (all classes have the same presence in the split).
+The concern part of the dataset is derived from a english dataset by translation. Thats why the execution of the script can take a couple of minutes.
 """
 
 TRAIN_SIZE=0.8 #size of training set
@@ -12,6 +13,10 @@ BINS=5 #number of bins for alignment (the more bins the more accurately are the 
 from datasets import load_dataset
 import pandas as pd
 import re
+import requests, zipfile, io
+import os
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+from transformers.models.m2m_100.modeling_m2m_100 import M2M100ForConditionalGeneration
 
 def load_questions_dataset():
     """Loads questions from germanquad dataset (https://huggingface.co/datasets/deepset/germanquad)
@@ -51,69 +56,109 @@ def load_offensive_dataset():
 
     return  offensive
 
-def sampler(df1:pd.DataFrame, df2:pd.DataFrame, min_max_bins:tuple, train_split:float=0.8, seed=None):
-    """Align distribution of word count per sample between df1 and df2 by random sampling. Additionally do a train test split by intervall.
-    Args:
-        df1 (pd.DataFrame): first dataframe
-        df2 (pd.DataFrame): second dataframe
-        min_max_bins (tuple): min token count, max token count, bin_size
-        train_amount (float): train size
-        seed (int): seed for sampling
-    
-    Returns:
-        (resampled train split from df1, resampled train split from df2, resampled test split from df1, resampled test split from df2) 
+def load_concern_dataset():
+    """ Loads SAD dataset from(https://github.com/PervasiveWellbeingTech/Stress-Annotated-Dataset-SAD)
+    Only take school related concern text.
     """
 
+    #load 
+    r = requests.get("https://raw.githubusercontent.com/PervasiveWellbeingTech/Stress-Annotated-Dataset-SAD/main/SAD_v1.zip")
+    z = zipfile.ZipFile(io.BytesIO(r.content))
+
+    #extract excel file from zip
+    filename = z.extract("SAD_v1.xlsx")
+
+    #read excel file
+    data = pd.read_excel(filename)
+
+    #delete excel file
+    os.remove(filename)
+
+    #filter for "School"
+    concern = data[data.top_label == "School"][["sentence"]].reset_index(drop=True, inplace=False)
+    concern.columns = ["text"] #rename
+
+    return concern
+
+def sampler(dfs:list, min_max_bins:tuple, train_split:float=0.8, seed=None):
     bins = pd.interval_range(start=min_max_bins[0], end=min_max_bins[1], freq=None, periods=min_max_bins[2], closed='right')
+    intervals_list = [pd.cut(df.text.apply(lambda x: len(x.split())), bins) for df in dfs]
 
-    df1_interals = pd.cut(df1.text.apply(lambda x: len(x.split())), bins)
-    df2_interals = pd.cut(df2.text.apply(lambda x: len(x.split())), bins)
+    # Calculate the minimum counts for each interval across all dataframes
+    min_counts = intervals_list[0].value_counts()
+    for intervals in intervals_list[1:]:
+        current_counts = intervals.value_counts()
+        min_counts = pd.concat([min_counts, current_counts], axis=1).min(axis=1)
 
-    # Align counts Series
-    aligned1, aligned2 = df1_interals.value_counts().align(df2_interals.value_counts(), fill_value=0)
+    # Group each dataframe by their intervals
+    grouped_list = [df.groupby(intervals, observed=True) for df, intervals in zip(dfs, intervals_list)]
+    
+    results = []
+    for df, df_grouped in zip(dfs, grouped_list):
+        df_sampled_train = []
+        df_sampled_test = []
 
-    # Combine and choose smallest value
-    result = aligned1.combine(aligned2, func=lambda x, y: min(x, y))
+        for interval, min_count in min_counts.items():
+            if interval in df_grouped.groups:
+                df_sampled = df_grouped.get_group(interval).sample(n=min_count, random_state=seed)
 
-    # Remove intervals which only appear in one series
-    result = result[result != 0]
+                df_train = df_sampled.sample(frac=train_split, random_state=seed)
+                df_test = df_sampled.drop(df_train.index)
 
-    #create groups
-    df1_grouped = df1.groupby(df1_interals, observed=False)
-    df2_grouped = df2.groupby(df2_interals, observed=False)
+                df_sampled_train.append(df_train)
+                df_sampled_test.append(df_test)
 
-    #sampled dataframes stored here
-    df1_sampled_train = []
-    df2_sampled_train = []
-    df1_sampled_test = []
-    df2_sampled_test = []
+        results.append((pd.concat(df_sampled_train, ignore_index=True), pd.concat(df_sampled_test, ignore_index=True)))
 
-    #iterate over intervals and random sample text with certain length
-    for group, count in result.items():
-        
-        #random sample amount of 'count' from original
-        df1_sampled = df1_grouped.get_group(group).sample(count, ignore_index=True, random_state=seed)
-        df2_sampled = df2_grouped.get_group(group).sample(count, ignore_index=True, random_state=seed)
+    return results
 
-        #get training split
-        df1_train = df1_sampled.sample(frac=train_split, random_state=seed)
-        df2_train = df2_sampled.sample(frac=train_split, random_state=seed)
+class Translate_en_ger():
+    def __init__(self, device:str="cuda:0", max_length:int=50) -> None:
+        """Translates a list of text from english to german. Uses the (nllb-200-distilled-1.3B) model
+        Args:
+            device (str): device to run the model on
+            max_length (int): generate text until max length (not sure?)
+        """
+        # Model: https://huggingface.co/docs/transformers/model_doc/nllb & https://huggingface.co/facebook/nllb-200-distilled-1.3B
+        # This model performed best in comparison with (https://huggingface.co/facebook/nllb-200-distilled-600M, https://huggingface.co/t5-base, https://huggingface.co/facebook/mbart-large-50-many-to-many-mmt) in a qualitative view
+        # Model Size is also restrited due to limiations of gpu memory
+        self.device = device
+        self.max_length = max_length
+        self.tokenizer = AutoTokenizer.from_pretrained("facebook/nllb-200-distilled-1.3B", fast=True)
+        self.model:M2M100ForConditionalGeneration = AutoModelForSeq2SeqLM.from_pretrained("facebook/nllb-200-distilled-1.3B", device_map=device)
 
-        #get test split
-        df1_test = df1_sampled.drop(df1_train.index)
-        df2_test = df2_sampled.drop(df2_train.index)
+    def translate(self, data_en:list):
+        """Translates a list of texts from english to german
+        Args:
+            data_en (list): list of english texts
 
-        df1_sampled_train.append(df1_train)
-        df2_sampled_train.append(df2_train)
-        df1_sampled_test.append(df1_test)
-        df2_sampled_test.append(df2_test)
-        
-        
-    #return concatted
-    return pd.concat(df1_sampled_train, ignore_index=True), pd.concat(df2_sampled_train, ignore_index=True), pd.concat(df1_sampled_test, ignore_index=True), pd.concat(df2_sampled_test, ignore_index=True)
+        Returns:
+            list of translated texts
+        """
+
+        inputs = self.tokenizer(data_en, padding=True, return_tensors="pt").to(self.device)
+
+        translated_tokens = self.model.generate(
+            **inputs, 
+            forced_bos_token_id=self.tokenizer.lang_code_to_id["deu_Latn"], 
+            max_length=self.max_length
+        )
+
+        return self.tokenizer.batch_decode(translated_tokens, skip_special_tokens=True)
 
 if __name__ == "__main__":
-    sampled_questions_train, sampled_offense_train, sampled_questions_test, sampled_offense_test = sampler(load_questions_dataset(), load_offensive_dataset(), (MIN_WORD_COUNT, MAX_WORD_COUNT, BINS), TRAIN_SIZE, SEED)
+    #load question data
+    questions = load_questions_dataset()
+
+    #load offensive data
+    offensive = load_offensive_dataset()
+
+    #load concern and translate to german
+    concern = load_concern_dataset()
+    concern["text"] = Translate_en_ger().translate(concern.text.to_list())
+
+    #sample datasets
+    (sampled_questions_train, sampled_questions_test), (sampled_offense_train, sampled_offense_test), (sampled_concern_train, sampled_concern_test) = sampler([questions, offensive, concern], (MIN_WORD_COUNT, MAX_WORD_COUNT, BINS), TRAIN_SIZE, SEED)
 
     #assign label to questions
     sampled_questions_train["label"] = "question"
@@ -123,9 +168,13 @@ if __name__ == "__main__":
     sampled_offense_train["label"] = "other"
     sampled_offense_test["label"] = "other"         
 
+    #assign label to concern
+    sampled_concern_train["label"] = "concern"
+    sampled_concern_test["label"] = "concern"       
+
     #combine
-    train = pd.concat([sampled_questions_train, sampled_offense_train], ignore_index=True)
-    test = pd.concat([sampled_questions_test, sampled_offense_test], ignore_index=True)
+    train = pd.concat([sampled_questions_train, sampled_offense_train, sampled_concern_train], ignore_index=True)
+    test = pd.concat([sampled_questions_test, sampled_offense_test, sampled_concern_test], ignore_index=True)
 
     print("train dataset: ")
     print(train.label.value_counts())

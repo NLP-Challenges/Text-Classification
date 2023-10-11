@@ -2,4 +2,4 @@ datasets==2.14.5
 pandas==2.1.1
 openpyxl==3.1.2
 transformers==4.34.0
-sacremoses==0.0.53
+accelerate==0.23.0

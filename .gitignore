@@ -162,3 +162,5 @@ cython_debug/
 lightning_logs/
 wandb/
 data-chatbot/
+bert-classifier/
+.DS_Store

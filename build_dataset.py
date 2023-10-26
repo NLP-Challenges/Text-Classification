@@ -7,7 +7,7 @@ The concern part of the dataset is derived from a english dataset by translation
 DEVICE='mps'
 
 TRAIN_SIZE=0.8 #size of training set
-SEED=None #seed for train test split
+SEED=420 #seed for train test split
 MIN_WORD_COUNT=3 #how many words at least must be present in a text to be included
 MAX_WORD_COUNT=13 #how many words at max are allowed to be in a text to be included
 BINS=5 #number of bins for alignment (the more bins the more accurately are the individual dataframes sampled according to word count) (BINS is not allowed to be bigger than [MAX_WORD_COUNT - MIN_WORD_COUNT], in this case each bin gets a single word length)
@@ -129,24 +129,28 @@ class Translate_EN_DE():
         self.tokenizer = AutoTokenizer.from_pretrained("facebook/nllb-200-distilled-1.3B", fast=True)
         self.model:M2M100ForConditionalGeneration = AutoModelForSeq2SeqLM.from_pretrained("facebook/nllb-200-distilled-1.3B", device_map=device)
 
-    def translate(self, data_en:list):
+    def translate(self, data_en:list, batch_size:int=32):
         """Translates a list of texts from english to german
         Args:
             data_en (list): list of english texts
+            batch_size (int): batch size for processing (to reduce ram useage on GPU)
 
         Returns:
             list of translated texts
         """
 
-        inputs = self.tokenizer(data_en, padding=True, return_tensors="pt").to(self.device)
+        def translate_batch(data:list):
+            inputs = self.tokenizer(data, padding=True, return_tensors="pt").to(self.device)
 
-        translated_tokens = self.model.generate(
-            **inputs, 
-            forced_bos_token_id=self.tokenizer.lang_code_to_id["deu_Latn"], 
-            max_length=self.max_length
-        )
+            translated_tokens = self.model.generate(
+                **inputs, 
+                forced_bos_token_id=self.tokenizer.lang_code_to_id["deu_Latn"], 
+                max_length=self.max_length
+            )
 
-        return self.tokenizer.batch_decode(translated_tokens, skip_special_tokens=True)
+            return self.tokenizer.batch_decode(translated_tokens, skip_special_tokens=True)
+        
+        return sum([translate_batch(data_en[i:i + batch_size]) for i in range(0, len(data_en), batch_size)], [])
 
 if __name__ == "__main__":
     #load question data
@@ -166,9 +170,9 @@ if __name__ == "__main__":
     sampled_questions_train["label"] = "question"
     sampled_questions_test["label"] = "question"
 
-    #assign label to other
-    sampled_offense_train["label"] = "other"
-    sampled_offense_test["label"] = "other"         
+    #assign label to harm
+    sampled_offense_train["label"] = "harm"
+    sampled_offense_test["label"] = "harm"         
 
     #assign label to concern
     sampled_concern_train["label"] = "concern"

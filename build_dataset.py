@@ -4,6 +4,8 @@ The split is done with respect to the number of words in the 'text' column and c
 The concern part of the dataset is derived from a english dataset by translation. Thats why the execution of the script can take a couple of minutes.
 """
 
+DEVICE='mps'
+
 TRAIN_SIZE=0.8 #size of training set
 SEED=420 #seed for train test split
 MIN_WORD_COUNT=3 #how many words at least must be present in a text to be included
@@ -112,7 +114,7 @@ def sampler(dfs:list, min_max_bins:tuple, train_split:float=0.8, seed=None):
 
     return results
 
-class Translate_en_ger():
+class Translate_EN_DE():
     def __init__(self, device:str="cuda:0", max_length:int=50) -> None:
         """Translates a list of text from english to german. Uses the (nllb-200-distilled-1.3B) model
         Args:
@@ -159,7 +161,7 @@ if __name__ == "__main__":
 
     #load concern and translate to german
     concern = load_concern_dataset()
-    concern["text"] = Translate_en_ger().translate(concern.text.to_list())
+    concern["text"] = Translate_EN_DE(DEVICE).translate(concern.text.to_list())
 
     #sample datasets
     (sampled_questions_train, sampled_questions_test), (sampled_offense_train, sampled_offense_test), (sampled_concern_train, sampled_concern_test) = sampler([questions, offensive, concern], (MIN_WORD_COUNT, MAX_WORD_COUNT, BINS), TRAIN_SIZE, SEED)
@@ -168,9 +170,9 @@ if __name__ == "__main__":
     sampled_questions_train["label"] = "question"
     sampled_questions_test["label"] = "question"
 
-    #assign label to other
-    sampled_offense_train["label"] = "other"
-    sampled_offense_test["label"] = "other"         
+    #assign label to harm
+    sampled_offense_train["label"] = "harm"
+    sampled_offense_test["label"] = "harm"         
 
     #assign label to concern
     sampled_concern_train["label"] = "concern"

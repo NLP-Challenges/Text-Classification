@@ -1,0 +1,31 @@
+text;label
+weisst du wie das wetter heute wird?;question
+denkst du ich bin intelligent;question
+wohin muss ich morgen;question
+was muss ich im modul EDA machen?;question
+Wer hat python erfunden?;question
+was macht ein affe auf dem baum?;question
+ich frage mich ob mein zug morgen verspätung hat;question
+erzähl mir mal einen witz;question
+ich kann mich nicht erinnern wer das modul ALA gibt;question
+
+du bist sehr intelligent;concern
+ich habe angst;concern
+ich bin sehr traurig;concern
+ich bin sehr glücklich;concern
+ich bin sehr wütend;concern
+ich bin sehr aufgeregt;concern
+klassengesellschaft;concern
+wie dumm bin ich eigentlich;concern
+ich bin sehr müde;concern
+wie soll das nur weitergehen;concern
+
+da draussen vor der FH hängen penner am Bahnhof rum;harm
+was für ein idiot;harm
+mothafucka;harm
+damn du bist ein schlechter chatbot;harm
+der hurensohn hat meine arbeit kopiert;harm
+meine mitstudenten sind alle pflöcke;harm
+auch schon aufgestanden, wichser?;harm
+du bist auch der dümmste von allen oder;harm
+woow wie krank im kopf kann man sein;harm

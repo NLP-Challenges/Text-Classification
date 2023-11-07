@@ -43,7 +43,7 @@ def load_offensive_dataset():
     germeval18 = pd.DataFrame(data)
 
     #regex for preprocessing
-    match = re.compile(r'[^a-zA-Z\säßüö\"\'.!?]', flags=re.UNICODE)
+    match = re.compile(r'[^a-zA-Z\säßüöÄÜÖ\"\'.!?]', flags=re.UNICODE)
     def preprocessing(text:str):
         """Removes username calling (@Username), only allows text, punktucation, double quote, single quote and replaces 'ß' with 'ss'
         """

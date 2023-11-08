@@ -20,4 +20,4 @@ wordcloud==1.9.2
 langchain==0.0.325
 sentence-transformers==2.2.2
 lightning==2.1.0
-wandb==0.15.12
+wandb==0.16.0

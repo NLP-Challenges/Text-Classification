@@ -166,3 +166,5 @@ bert-classifier/
 .DS_Store
 chatbot-classification/
 artifacts/
+
+.idea/

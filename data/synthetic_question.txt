@@ -146,52 +146,6 @@ Was sind die Hauptthemen in den Lernmaterialien von "Quantitative Methods for Da
 Was sind die zentralen Themen in den Lernmaterialien für "Statistisches Lernen" (STL)?
 Welche spezifischen Programmierkonzepte werden in "Data Structures and Algorithms" (DSA) behandelt?
 Welche Fallbeispiele gibt es in den Lernmaterialien für "Big Data Technologies"?
-Wie werden ethische Fragestellungen in "Data Science Ethics" adressiert?
-Was sind die wichtigsten Methoden, die in "Bayesianische Statistik" vorgestellt werden?
-Welche mathematischen Konzepte sind zentral in "Time Series Analysis"?
-Welche spezifischen Datenanalysetechniken werden in "Text Mining" unterrichtet?
-Welche Programmiersprachen und Tools werden in "Data Engineering" (DEN) hervorgehoben?
-Was sind die Schlüsselkonzepte in den Lernmaterialien von "Artificial Intelligence" (AIN)?
-Wie wird "Netzwerktheorie" in Bezug auf Data Science in "Network Science" behandelt?
-Welche spezifischen Datenstrukturen werden in "Database Systems" (DBS) behandelt?
-Wie werden Benutzerinteraktionen in "Human-Computer Interaction" konzeptionell behandelt?
-Was sind die Hauptthemen in "Natural Language Processing" (NLP)?
-Welche Sicherheitskonzepte werden in "Data Security" diskutiert?
-Welche Analysemethoden werden in "Digital Analytics" vorgestellt?
-Wie werden statistische Methoden in "Applied Statistics" angewendet?
-Wie wird räumliche Datenanalyse in "Geospatial Analysis" behandelt?
-Welche Datenverarbeitungskonzepte werden in "Distributed Systems" diskutiert?
-Welche statistischen Methoden werden in "Statistical Methods in Data Science" gelehrt?
-Wie wird "Ethical Hacking" im Kontext von Data Science behandelt?
-Welche Governance-Modelle werden in "Data Governance" vorgestellt?
-Welche Programmierkonzepte werden in "Software Engineering for Data Science" betont?
-Welche spezifischen Analysetechniken werden in "Bioinformatics" gelehrt?
-Wie werden fortgeschrittene Datenstrukturen in "Advanced Data Structures" erklärt?
-Was sind die Schlüsselkonzepte in den Lernmaterialien von "Cognitive Computing"?
-Gibt es Tutorien für "Machine Learning Applications"?
-Welche Themen deckt das Modul "Data Management" ab?
-Wie ist der Bewertungsprozess in "Algorithmic Data Analysis" gestaltet?
-Gibt es eine Gruppenarbeit im Kurs "Data Ethics"?
-Wie viele ECTs werden für "Computational Statistics" benötigt?
-Welche Vorlesungsmaterialien benötige ich für das Modul "Netzwerkanalyse"?
-Wer ist der Dozent von "Predictive Analytics"?
-Kann ich "Network Science" als Wahlfach nehmen?
-Wie ist der Zeitplan für "Statistical Learning"?
-Gibt es eine Zusammenfassung der Vorlesungen in "Computational Learning Theory"?
-Wie viele Gruppenarbeiten gibt es in "Social Network Analysis"?
-Kannst du mir die Grundlagen von "Predictive Modelling" erklären?
-Welche Projekte müssen wir in "Data Mining" (DMN) abschließen?
-Welche Literatur wird für das Modul "Statistical Computing" empfohlen?
-Welche Fallbeispiele gibt es im Modul "Business Intelligence"?
-Welche Art von Präsentationen sind in "Digital Analytics" erforderlich?
-Gibt es Online-Ressourcen für das Modul "Data Integration"?
-Welche Themen werden in "Time Series Analysis" behandelt?
-Kann ich "Data Science in Education" als Wahlfach wählen?
-Wie ist der Online-Unterricht für "Data Governance and Law" organisiert?
-Welche Software wird im Kurs "Statistical Learning Theory" verwendet?
-Wer ist der Dozent von "Multivariate Data Analysis"?
-Was sind die Prüfungsanforderungen für "Computational Social Science"?
-Welche praktischen Übungen gibt es im Modul "Data Journalism"?
 Wer lehrt das Modul "Advanced Data Analysis" (ADA) und welche Lehrmethoden werden verwendet?
 Kannst du mir Hintergrundinformationen über den Dozenten von "Machine Learning" geben?
 Welche Expertise bringt der Dozent für "Data Visualization" mit?
@@ -267,23 +221,12 @@ Wie ist der Lehrstil des Dozenten von "Data Quality and Cleaning"?
 Welche Fallbeispiele gibt es in "Distributed Systems"?
 Was sind die Schlüsselkonzepte in "Statistical Methods in Data Science"?
 Kannst du mir die Expertise des Dozenten von "Data Governance" erläutern?
-Welche Programmierkonzepte werden in "Software Engineering for Data Science" betont?
-Welche spezifischen Analysetechniken werden in "Bioinformatics" gelehrt?
-Wer ist der Hauptverantwortliche für das Modul "Advanced Data Structures" und welche Forschungsinteressen hat er/sie?
 Wie werden ethische Fragestellungen in "Cognitive Computing" adressiert?
 Gibt es eine Gruppenarbeit im Kurs "Social Network Analysis"?
 Wer leitet das Modul "Data Science in Healthcare" und welche Branchenerfahrung bringt er/sie mit?
 Welche Themen deckt das Modul "Quantitative Methods for Data Science" ab?
 Gibt es Gastvorträge im Kurs "Data Visualization Techniques" und wer sind die Gastdozenten?
 Kannst du mir etwas über den Lehransatz des Dozenten von "Analytics in Sports" erzählen?
-Wer ist der Dozent für "Data Science in Finance" und welche speziellen Projekte hat er/sie geleitet?
-Wie sind die Laborübungen in "Computational Neuroscience" organisiert?
-Welche speziellen Themen werden in "Data Science in Marketing" behandelt?
-Wie ist der Bewertungsprozess im Modul "Quantitative Risk Analysis" gestaltet?
-Kannst du mir etwas über den Hintergrund des Dozenten von "Ethics in Artificial Intelligence" sagen?
-Wer ist verantwortlich für die Lerninhalte von "Distributed Computing for Data Science"?
-Gibt es Gastdozenten im Modul "Urban Data Science" und wenn ja, wer sind sie?
-Wie ist der berufliche Werdegang des Dozenten von "Biostatistics"?
 Welche Voraussetzungen gibt es für das Modul "Maschinelles Lernen"?
 Wie viele Vorlesungen sind pro Woche im Modul "Datenanalyse" geplant?
 Kann ich "Netzwerktheorie" als Wahlfach für das dritte Semester wählen?

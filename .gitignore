@@ -165,6 +165,7 @@ data-chatbot/
 bert-classifier/
 .DS_Store
 chatbot-classification/
+chatbot-classification-bert-synthetic/
 artifacts/
 
 .idea/

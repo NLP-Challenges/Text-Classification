@@ -465,3 +465,153 @@ Welche Themen rund um die Ethik in Data Science und künstlicher Intelligenz wer
 Wie werden Empfehlungssysteme im Studiengang Data Science behandelt?
 Welche mathematischen Techniken sind in den Lernmaterialien zur künstlichen Intelligenz (KI) enthalten?
 Kannst du die Grundlagen von Clusteralgorithmen im Curriculum für Data Science erklären?
+Was ist der Unterschied zwischen maschinellem Lernen und Data Mining?
+Wie viele ECTS bringt das Modul Netzwerkanalyse?
+Gibt es Übungen zur praktischen Anwendung von R in Statistik?
+Wer lehrt das Modul Text Mining und Natural Language Processing?
+Was sind die Voraussetzungen für den Kurs Deep Learning?
+In welchem Semester wird das Modul Datenvisualisierung angeboten?
+Wie kann ich mich für das Praktikum in Big Data anmelden?
+Gibt es eine Einführung in Python-Programmierung für Anfänger?
+Welche Themen werden im Kurs Ethik in der Datenwissenschaft behandelt?
+Kann ich meine Masterarbeit im Bereich Künstliche Intelligenz schreiben?
+Wann ist die Anmeldefrist für das Modul Cloud Computing?
+Was ist der Inhalt des Moduls Entscheidungsbaum-Algorithmen?
+Wie kann ich auf die Online-Materialien für Datenstrukturen zugreifen?
+Was sind die Unterschiede zwischen überwachtem und unüberwachtem Lernen?
+Gibt es ein Modul, das sich speziell mit SQL-Datenbanken beschäftigt?
+Kann ich das Modul Zeitreihenanalyse im Sommersemester belegen?
+Wer ist der Ansprechpartner für Fragen zum Modul Experimentelles Design?
+Welche Projekte werden im Kurs Datenethik umgesetzt?
+Gibt es ein Seminar über die Anwendungen von maschinellem Lernen in der Finanzwelt?
+Wie wird das Modul Computergestützte Statistik bewertet?
+Welche Lehrbücher werden für das Modul Algorithmen und Datenstrukturen empfohlen?
+Wie viele Studenten können am Workshop für Datenjournalismus teilnehmen?
+Was sind die Lernziele des Kurses Reinforcement Learning?
+Werden im Modul Predictive Analytics Fallstudien behandelt?
+Gibt es eine Vorlesung, die sich mit der Geschichte der Data Science beschäftigt?
+Wie wird der Kurs Clusteranalyse bewertet?
+Welche Software wird im Modul Maschinelles Sehen verwendet?
+Bietet die Universität Tutorien zur Unterstützung in Statistik an?
+Was ist der Schwerpunkt des Kurses Datenmanagement?
+Kann ich als Informatikstudent das Modul Datenintegration belegen?
+Welche Rolle spielt Data Governance im Studiengang?
+Wie kann ich mein Wissen in Bayesianischer Statistik vertiefen?
+Gibt es eine Gruppenarbeit im Kurs Data Warehousing?
+Werden im Modul Datenqualität und -reinigung praktische Übungen durchgeführt?
+Wie kann ich Zugang zum Online-Forum für das Modul Web Analytics erhalten?
+Kann ich als Gasthörer am Kurs Künstliche neuronale Netze teilnehmen?
+Welche Karrieremöglichkeiten eröffnet der Kurs Business Intelligence?
+Bietet die Universität Unterstützung bei der Suche nach Data-Science-Praktika?
+Wie unterscheiden sich deskriptive und inferenzielle Statistik?
+Kann ich das Modul Multivariate Statistik im Auslandssemester belegen?
+Gibt es eine Einführungsklasse für Cloud-basierte Data-Science-Tools?
+Werden im Kurs Spieltheorie und Data Science auch praktische Anwendungen behandelt?
+Wie viele ECTS erhalte ich für das Absolvieren des Kurses Data Mining?
+Gibt es eine Pflichtvorlesung zum Thema Datenschutz und Datensicherheit?
+Welche Themen deckt das Modul Kognitive Systeme ab?
+Wie kann ich mich für den Kurs Algorithmische Modellbildung anmelden?
+Welche Fallbeispiele werden im Modul Data Science in der Praxis verwendet?
+Gibt es spezielle Kurse zur Datenanalyse in den Sozialwissenschaften?
+Welche Rolle spielt Data Literacy im Data-Science-Curriculum?
+Wie wird im Modul Maschinelles Lernen praktische Erfahrung vermittelt?
+Gibt es eine Einführung in die Anwendung von Graphendatenbanken in Data Science?
+Wie ist der Kurs Datenmigration strukturiert?
+Werden im Modul Geodatenanalyse auch GIS-Technologien behandelt?
+Was sind die Schlüsselkonzepte im Kurs Skalierbare Datenverarbeitung?
+Wie viele Studenten können das Seminar zu Advanced Analytics belegen?
+Bietet die Universität Zugang zu speziellen Data-Science-Softwaretools?
+Kann ich im Modul Experimentelles Design eigene Experimente vorschlagen?
+Was sind die Lernziele des Kurses Data Science in der Medizin?
+Welche Vorkenntnisse benötige ich für den Kurs Natural Language Generation?
+Wie wird der Kurs Echtzeit-Datenverarbeitung bewertet?
+Gibt es einen Workshop zum Thema Ethik der künstlichen Intelligenz?
+Welche Themen werden im Modul Big Data Architekturen abgedeckt?
+Wie kann ich auf die Online-Vorlesungen zu Datenvisualisierungstools zugreifen?
+Was ist der Fokus des Kurses Machine Learning in der Produktion?
+Wer lehrt das Modul Advanced Machine Learning?
+Wie ist das Modul Datenanalyse in den Geisteswissenschaften aufgebaut?
+Gibt es ein Praktikum zur Anwendung von Statistik in der Marktforschung?
+Welche Themen werden im Seminar zur Datenethik behandelt?
+Welche Rolle spielt Data Mining in der Bioinformatik?
+Gibt es eine Vorlesung, die sich mit der Anwendung von Data Science in der Umweltwissenschaft beschäftigt?
+Wie viele ECTS gibt das Modul Computational Social Science?
+Werden im Kurs Business Analytics Fallstudien aus der realen Wirtschaftswelt behandelt?
+Kann ich meine Bachelorarbeit im Bereich Data Science und Psychologie schreiben?
+Was sind die Prüfungsmodalitäten für das Modul Datenintegration?
+Wie kann ich mich für den Kurs Data Science und Journalismus anmelden?
+Gibt es eine Einführung in die Anwendung von Machine Learning in der Bildverarbeitung?
+Wie unterscheiden sich die Kurse in deskriptiver und prädiktiver Analytik?
+Wer ist der Hauptdozent für das Modul Data Science und Künstliche Intelligenz?
+Kann ich als Wirtschaftsstudent an dem Modul Advanced Data Analytics teilnehmen?
+Welche Rolle spielt das Modul Ethik in der Data Science in der Berufspraxis?
+Wie kann ich auf die Lernmaterialien für das Modul Statistische Modellierung zugreifen?
+Werden im Modul Datenmanagement auch Cloud-basierte Lösungen behandelt?
+Gibt es ein Tutorium für das Verständnis von Deep Learning Algorithmen?
+Welche praktischen Anwendungen werden im Kurs Datenanalyse in der Sportwissenschaft behandelt?
+Wie ist der Kurs Data Science in der öffentlichen Verwaltung strukturiert?
+Welche Voraussetzungen gibt es für das Modul Predictive Modeling?
+Werden im Modul Algorithmen für große Datenmengen auch praktische Übungen durchgeführt?
+Gibt es eine Vorlesung, die sich mit der Rolle von Data Science in der Politikwissenschaft beschäftigt?
+Was sind die Hauptthemen im Seminar Data Science und Ethik?
+Wie viele ECTS erhalte ich für den Kurs Einführung in die Textanalyse?
+Kann ich im Modul Machine Learning for Health Care auch eigene Projekte vorschlagen?
+Gibt es ein Modul, das sich mit der Anwendung von Data Science in der Musikwissenschaft beschäftigt?
+Wie kann ich mich für das Modul Advanced Statistical Methods anmelden?
+Welche Themen werden im Kurs Data Science für soziale Medien behandelt?
+Wer leitet das Seminar zu Data Science in der Raumfahrt?
+Wie ist das Modul Datengetriebenes Marketing strukturiert?
+Kann ich meine Masterarbeit im Bereich Big Data und Datenschutz schreiben?
+Was sind die Schlüsselkonzepte im Kurs Datenanalyse in Echtzeit?
+Werden im Modul Künstliche Intelligenz ethische Aspekte behandelt?
+Gibt es einen Einführungskurs in Data Science für Studierende anderer Fachbereiche?
+Erkläre mir die Grundlagen der Regressionanalyse.
+Informiere mich über die neuesten Trends im maschinellen Lernen.
+Zeige mir Beispiele für erfolgreiche Data-Science-Projekte.
+Biete mir eine Schritt-für-Schritt-Anleitung für die Durchführung einer Clusteranalyse.
+Erläutere die Unterschiede zwischen verschiedenen Typen neuronaler Netze.
+Gib einen Überblick über Data-Science-Werkzeuge und ihre Anwendungen.
+Demonstriere, wie man ein Data-Science-Projekt von Anfang bis Ende plant.
+Vergleiche klassische statistische Methoden mit maschinellem Lernen.
+Stelle Verbindungen zwischen Data Science und anderen Disziplinen wie Wirtschaft oder Biologie her.
+Beschreibe die ethischen Überlegungen in der Data Science.
+Erkläre, wie man Daten für maschinelles Lernen vorbereitet.
+Führe durch die grundlegenden Schritte der Datenbereinigung.
+Präsentiere Fallstudien, die den Einsatz von Big Data in Unternehmen zeigen.
+Biete Ratschläge für das Schreiben einer erfolgreichen Data-Science-Bachelorarbeit.
+Zeige, wie man Datenvisualisierungswerkzeuge effektiv einsetzt.
+Erkläre die Bedeutung und Anwendung von Time Series Analysis.
+Diskutiere die Herausforderungen und Lösungen im Bereich der Künstlichen Intelligenz.
+Stelle unterschiedliche Ansätze im Bereich des Deep Learning vor.
+Erkläre, wie man ein neuronales Netz von Grund auf aufbaut.
+Beschreibe die Schritte zur Durchführung einer prädiktiven Analyse.
+Biete eine Einführung in die Programmierung mit Python für Data Science.
+Erkläre die Konzepte hinter der Textanalyse und ihrem Einsatzgebiet.
+Zeige, wie man einen Datensatz für maschinelles Lernen auswählt und vorbereitet.
+Diskutiere die Rolle von Data Science in der Gesundheitsinformatik.
+Erkläre die Anwendung von Statistik in der Data Science.
+Beschreibe die verschiedenen Arten von Datenmodellen und ihre Anwendung.
+Zeige, wie man ein effektives Data-Science-Team aufbaut und führt.
+Diskutiere die Rolle von Datenschutz und Datensicherheit in der Data Science.
+Biete eine Übersicht über Karrierewege in der Data Science.
+Erkläre die Bedeutung von Data Governance in Unternehmen.
+Demonstriere die Verwendung von SQL in der Datenanalyse.
+Stelle verschiedene Data-Science-Frameworks und ihre Anwendungen vor.
+Diskutiere die Auswirkungen von künstlicher Intelligenz auf die Arbeitswelt.
+Beschreibe die Entwicklung und Zukunft von Data Science.
+Biete einen Leitfaden für das effektive Management von Data-Science-Projekten.
+Erkläre die Rolle und Bedeutung von Data Warehousing.
+Zeige, wie man Daten für soziale Netzwerkanalysen nutzt.
+Diskutiere, wie Data Science im Marketing eingesetzt wird.
+Beschreibe die Herausforderungen bei der Datenintegration aus verschiedenen Quellen.
+Erkläre die Bedeutung von maschinellem Lernen in der Finanzbranche.
+Biete Einblicke in die Nutzung von Data Science in der Logistik.
+Diskutiere die Anwendung von maschinellem Lernen in der Bilderkennung.
+Zeige, wie man maschinelles Lernen für die Vorhersage von Verbraucherverhalten einsetzt.
+Beschreibe die Verwendung von Data Science in der Risikobewertung.
+Erkläre, wie man mit unstrukturierten Daten in Data Science-Projekten umgeht.
+Diskutiere die Anwendung von Data Science in der Umweltwissenschaft.
+Zeige, wie man maschinelles Lernen für die Optimierung von Lieferketten einsetzt.
+Beschreibe die Rolle von Data Science in der Entwicklung nachhaltiger Technologien.
+Erkläre die Anwendung von Data Science im Bildungsbereich.
+Diskutiere die ethischen Implikationen der Anwendung von Data Science in der Überwachung.

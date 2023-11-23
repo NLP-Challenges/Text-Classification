@@ -26,7 +26,7 @@ def get_content(path: Path, label_name: str):
         pd.DataFrame: A DataFrame containing the text and its corresponding label.
     """
     with open(path, encoding="utf-8") as f:
-        text_list = f.readlines()
+        text_list = [text.strip() for text in f.readlines()]
 
     df = pd.DataFrame({"text": text_list, "label": [label_name] * len(text_list)})
 

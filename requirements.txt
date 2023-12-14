@@ -23,3 +23,4 @@ sentence-transformers==2.2.2
 lightning==2.1.0
 wandb==0.16.0
 onnx==1.15.0
+python-dotenv==1.0.0

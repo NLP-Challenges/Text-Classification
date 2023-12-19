@@ -169,3 +169,4 @@ artifacts/
 svc_model/
 
 .idea/
+BertWithSyntheticData/

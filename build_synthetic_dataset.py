@@ -7,12 +7,14 @@ SEED = 420        # Seed for random operations to ensure reproducibility
 
 def get_paths():
     """
-    Retrieves a list of paths for all synthetic text files in the 'data' directory.
+    Retrieves a list of paths for all synthetic and hf text files in the 'data' directory.
 
     Returns:
         List[Path]: A list of paths for files matching the pattern 'synthetic_*.txt'.
     """
-    return list(Path("./data/").glob(pattern="synthetic_*.txt"))
+    synthetic = list(Path("./data/").glob(pattern="synthetic_*.txt"))
+    human_feedback = list(Path("./data/").glob(pattern="hf_*.txt"))
+    return synthetic + human_feedback
 
 def get_content(path: Path, label_name: str):
     """

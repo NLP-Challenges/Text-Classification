@@ -1,0 +1,21 @@
+text,label
+"Junge, bist du ein Idiot!",harm
+"Was ist eine Logistische Regression?",question
+"Das Studium wird mir langsam zu anstrengend...",concern
+"Warum ist die Kantine immer so voll?",question
+"Deine Antworten helfen mir nicht weiter",harm
+"Ich fühle mich im Kurs völlig verloren",concern
+"Was ist die beste Methode zur Datenauswertung?",question
+"Ich bin unzufrieden mit meiner Work-Life-Balance",concern
+"Wo finde ich den Stundenplan?",question
+"Du machst deinen Job wirklich schlecht",harm
+"Warum haben wir so viele Prüfungen in einem Semester?",question
+"Die Vorlesungen machen keinen Sinn",concern
+"Was sind die Prüfungstermine für das nächste Semester?",question
+"Ich verstehe nicht, warum wir das lernen müssen",harm
+"Die Gruppenarbeit überfordert mich",concern
+"Kannst du das bitte wiederholen?",question
+"Das ist total unnötig",harm
+"Ich sorge mich um meine berufliche Zukunft",concern
+"Wie lange dauert die Bearbeitungszeit für die Abschlussarbeit?",question
+"Du könntest wirklich freundlicher sein",harm

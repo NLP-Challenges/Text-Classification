@@ -1,56 +1,54 @@
-# Text-Classification
+# Text Classification 🤖📥
 
-****MC1 (LE3-LE5)****
+This repository hosts the code for the Text Classifier used in our [Study Bot Implementation](https://github.com/NLP-Challenges/Study-Bot).
 
-## Model Selection
-Begründen, wieso wir diese Architekturen/Modelle verwenden
+The BERT-based classifiers are published under the [nlpchallenges organization on Hugging Face](https://huggingface.co/nlpchallenges). You can find the models specific to this project at [nlpchallenges/Text-Classification](https://huggingface.co/nlpchallenges/Text-Classification) and [nlpchallenges/Text-Classification-Synthetic-Dataset](https://huggingface.co/nlpchallenges/Text-Classification-Synthethic-Dataset).
 
-Mindestens 1 System Fine-Tuned
+## Repository Structure
 
-- ****TF-IDF und Hist Gradient Boost / SVM****
-    - Tokenization
-- **Transformer (oder anderes DL-Modell) / CNN**
-    - Word-to-Vec / Doc-to-Vec
-    - Fine-Tuned Model
-    - BERT (Transformer, Embeddings) / LLAMA?
-        
-        [BERT](https://huggingface.co/docs/transformers/model_doc/bert)
-        
+The structure of this repository is organized as follows:
 
-To perform the tasks in a chronological and logical order, follow these bullet points:
+```markdown
+└── 📁Text-Classification
+    └── README.md
+    └── requirements.txt
+    └── 📁assets [ℹ️ Assets used in README.md/Notebooks]
+    └── 📁classifier-for-bot [ℹ️ The Classifier built for the Data Chatbot]
+        └── 📁data
+        └── 📁src
+            └── BERT-classification-synthetic.ipynb [ℹ️ Notebook for training BERT-based classifier on the synthetic dataset]
+            └── build_synthetic_dataset.py [ℹ️ Script to build the synthetic dataset for the classifier]
+    └── 📁data
+    └── 📁src
+        └── 📁poc [Proof of Concept for each of the 3 classifier variants]
+        └── build_custom_dataset.py 
+        └── build_dataset.py [ℹ️ Script to build the dataset for the classifiers]
+        └── classification.ipynb [ℹ️ Notebook for 3 classifier experiments (NPR MC1)]
+```
 
-## Plan
+## Setup
 
-1. **Form a Group of 2**
-    - Find a partner to collaborate with on the project
-    - Establish communication and project management protocols
-2. **Selection of Classification Systems**
-    - Conduct preliminary research on various classification systems such as tf-idf-svm, cnns, or transformers
-    - Choose two different classification systems, with at least one being a fine-tuned deep learning model
-    - Draft initial arguments for the selection of the chosen systems based on their underlying theories
-3. **Dataset Acquisition**
-    - Identify and select an appropriate dataset for text classification from platforms such as semeval, kaggle, codalab, or paperwithcode
-    - Ensure the dataset selected is not the 20newsgroup dataset as it is already in use
-4. **Repository Setup**
-    - Set up a GitLab repository for the project
-    - Organize the repository to include sections for the report, a Python notebook, and a wiki or git issues for documenting progress
-5. **System Building**
-    - Develop the chosen classification systems, ideally implementing them from scratch for bonus points
-    - Start documenting the build process and any encountered errors in the repository's wiki or git issues
-6. **System Training**
-    - Train the developed classification systems using the chosen dataset
-    - Log the training progress and any noteworthy observations in the repository
-7. **System Evaluation**
-    - Evaluate the performance of the systems using appropriate metrics
-    - Document the selected metrics and justify their choice in the context of the project's use case
-8. **Error Analysis**
-    - Conduct a thorough error analysis of both systems
-    - Propose theories for potential improvements based on the analysis, focusing especially on individual cases and comparative predictions
-9. **Report Compilation**
-    - Begin compiling a detailed report, incorporating sections that describe the chosen systems, their theoretical background, and the rationale behind their selection
-    - Include an evaluation section detailing the chosen metrics and a discussion on the results of the experiments, along with predictions on individual test samples
-10. **Submission Preparation**
-    - Prepare the project for submission, ensuring that the GitLab repository includes the report, a Python notebook to reproduce the results, and a well-documented wiki or git issues section
-    - Verify that both group members have made significant contributions, as evidenced by the commit history
-11. **Submission**
-    - Submit the project through the GitLab repository, adhering to any additional submission guidelines provided.
+### Prerequisites
+
+1. **Python Environment**: Create a new virtual Python environment to ensure isolated package management (we used Python 3.11.6).
+2. **Installation**: Navigate to the repository's root directory and install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Clone the Repository**: Clone this repository to your local machine.
+
+## Testing Different Classifiers
+
+First, we implemented three different classifier approaches and tested their performance on our constructed dataset. The three approaches are:
+
+- Linear-SVC
+- LSTM-CNN
+- BERT
+
+For details on the implementation and the results, please refer to the [classification.ipynb](src/classification.ipynb) notebook.
+
+## Building the Classifier for the Data Chatbot
+
+Based on the results obtained comparing the three approaches, we decided to use BERT as the classifier for our Data Chatbot. We trained the classifier on a synthetic dataset, which we constructed using the [build_synthetic_dataset.py](classifier-for-bot/src/build_synthetic_dataset.py) script. The notebook [BERT-classification-synthetic.ipynb](classifier-for-bot/src/BERT-classification-synthetic.ipynb) contains the code for training the classifier on the synthetic dataset.
+
+The files `hf_concern.txt`, `hf_question.txt`, and `hf_harm.txt` can be used to add further examples that failed during production to the training data. The files are part of the training data additionally to the synthetic dataset, when the classifier is trained.

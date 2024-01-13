@@ -167,5 +167,7 @@ bert-classifier/
 chatbot-classification/
 chatbot-classification-bert-synthetic/
 artifacts/
+svc_model/
 
 .idea/
+BertWithSyntheticData/

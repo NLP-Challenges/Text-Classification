@@ -26,7 +26,6 @@ def load_questions_dataset():
     """
     data = load_dataset("deepset/germanquad", split="train")
 
-    #TODO remove 50% of the question marks ? (maybe BERT focuses on questionmarks)
     questions = pd.DataFrame(data)[["question"]]
     questions.columns = ["text"] #rename
 

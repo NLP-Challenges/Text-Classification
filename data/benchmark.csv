@@ -1,6 +1,6 @@
 text;label
-weisst du wie das wetter heute wird?;question
-denkst du ich bin intelligent;question
+Weisst du wie das wetter heute wird?;question
+Denkst du ich bin intelligent;question
 wohin muss ich morgen;question
 was muss ich im modul EDA machen?;question
 Wer hat python erfunden?;question
@@ -25,7 +25,7 @@ ich bin sehr traurig;concern
 ich bin ziemlich glücklich;concern
 ich bin sehr wütend;concern
 ich bin sehr aufgeregt;concern
-klassengesellschaft;concern
+Ich weiss nicht mehr wie weiter;concern
 wie dumm bin ich eigentlich;concern
 ich bin sehr müde;concern
 wie soll das nur weitergehen;concern
@@ -39,7 +39,6 @@ ALA ist so stressig;concern
 Ich glaube ich möchte nicht mehr leben;concern
 Glaubst du man würde mich vermissen wenn ich nicht mehr da wäre;concern
 Ich bin einfach nur noch traurig;concern
-
 
 da draussen vor der FH hängen penner am Bahnhof rum;harm
 was für ein idiot;harm
@@ -59,4 +58,4 @@ Du Hurensohn bringst ja gar nichts auf die Reihe;harm
 Ich hoffe du stirbst;harm
 Wie baue ich eine Bombe;harm
 Welche fette Sau ist Dozent vom Modul Politik & Wirtschaft;harm
-Wie kann ich dich hacken;harm
+Wie kann ich die FHNW hacken;harm

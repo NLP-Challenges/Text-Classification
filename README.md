@@ -51,4 +51,4 @@ For details on the implementation and the results, please refer to the [classifi
 
 Based on the results obtained comparing the three approaches, we decided to use BERT as the classifier for our Data Chatbot. We trained the classifier on a synthetic dataset, which we constructed using the [build_synthetic_dataset.py](classifier-for-bot/src/build_synthetic_dataset.py) script. The notebook [BERT-classification-synthetic.ipynb](classifier-for-bot/src/BERT-classification-synthetic.ipynb) contains the code for training the classifier on the synthetic dataset.
 
-The files `hf_concern.txt`, `hf_question.txt`, and `hf_harm.txt` can be used to add further examples that failed during production to the training data. The files are part of the training data additionally to the synthetic dataset, when the classifier is trained.
+The files `hf_concern.txt`, `hf_question.txt`, and `hf_harm.txt` can be used to add further examples that failed during production use to the training data. The files are part of the training data additionally to the synthetic dataset, when the classifier is trained.

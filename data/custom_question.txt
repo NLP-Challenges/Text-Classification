@@ -1,0 +1,100 @@
+wie lerne ich am besten für die Prüfung in statistik?
+ist lineare algebra schwierig zu verstehen?
+kannst du mir helfen, den code zu debuggen?
+welche programmiersprache soll ich als erstes lernen?
+wie kann ich meine Fähigkeiten in Maschinelles Lernen verbessern?
+gibt es eine einfache erklärung für tensorfluss?
+wo finde ich Ressourcen über interaktive Visualisierungen?
+werden wir in der vorlesung maschinelles lernen python verwenden?
+ist der Kurs in Datenwissenschaften schwer?
+was ist der Unterschied zwischen AI und ML?
+brauche ich für informationswissenschaften viel mathe?
+könntest du mir ein gutes buch über datenanalyse empfehlen?
+was ist der beste weg um informationskompetenz zu entwickeln?
+kann man lineare algebra in der echten welt anwenden?
+welche tipps hast du für einen neuen softwareingenieur?
+wie lange dauert es, datenwissenschaft zu studieren?
+soll ich mich auf frontend- oder backend-entwicklung konzentrieren?
+was sind die Grundlagen der Computerwissenschaft?
+werden wir im modul informationswissenschaften projekte machen?
+was ist der unterschied zwischen datenbanken und datenlagerung?
+kann ich ohne programmierkenntnisse in datenwissenschaft einsteigen?
+welche art von mathematik wird in maschinellem lernen verwendet?
+ist es wichtig, statistik für datenanalyse zu kennen?
+wie verbessere ich meine fähigkeiten in python?
+was ist wichtiger: theorie oder praxis in software engineering?
+kann man maschinelles lernen ohne tiefe mathematik verstehen?
+wie kann ich meine daten besser visualisieren?
+welches modul deckt netzwerksicherheit ab?
+was sind die voraussetzungen für den kurs in künstlicher intelligenz?
+gibt es eine einfache methode, um algorithmen zu lernen?
+wie wichtig ist lineare algebra in der datenwissenschaft?
+kannst du mir ein projekt für mein portfolio empfehlen?
+wie bereite ich mich auf ein vorstellungsgespräch als datenwissenschaftler vor?
+welche programmiersprachen sind für maschinelles lernen am besten?
+soll ich mich auf python oder R in der datenanalyse konzentrieren?
+welche fähigkeiten sind für einen data scientist essentiell?
+wie kann ich meine schreibfähigkeiten für technische dokumentation verbessern?
+brauche ich einen masterabschluss in informatik, um als softwareingenieur zu arbeiten?
+was ist der beste weg, um kritische denkfähigkeiten zu entwickeln?
+kannst du eine gute online-ressource für software engineering empfehlen?
+gibt es eine spezielle software, die ich für datenanalyse lernen sollte?
+wie kann ich effektiv für das modul maschinelles lernen lernen?
+was sind die neuesten trends in der datenwissenschaft?
+sollte ich mich auf Java oder Python für meine Softwareentwicklung konzentrieren?
+wie kann ich meine kenntnisse in datenvisualisierung vertiefen?
+ist es notwendig, C++ für datenwissenschaft zu lernen?
+welche Rolle spielt ethik in der datenwissenschaft?
+wie erstelle ich eine starke datenwissenschaftliche Arbeit?
+kann man datenwissenschaft selbstständig lernen?
+was sind die größten herausforderungen in der datenwissenschaft?
+wie wichtig ist es, cloud-technologien in der datenwissenschaft zu kennen?
+könntest du mir eine einfache erklärung für maschinelles lernen geben?
+was ist der unterschied zwischen supervised und unsupervised learning?
+brauche ich Kenntnisse in Statistik für machine learning?
+wie kann ich ein effektiverer Programmierer werden?
+ist es besser, sich auf eine spezifische technologie zu spezialisieren?
+wie starte ich ein karriere in datenwissenschaft ohne hintergrund in informatik?
+was sind die grundlagen für das erstellen einer webanwendung?
+wie kann ich daten effizient für maschinelles lernen aufbereiten?
+welche Bücher sollten Datenwissenschaftler lesen?
+Kann man das Modul "Maschinelles Lernen" mit anderen Kursen kombinieren?
+Wie lange dauert der Kurs "Interaktive Visualisierungen"?
+Ist Lineare Algebra schwer zu verstehen?
+Wie viele ECTS bekomme ich für "Informationswissenschaften"?
+In welchem Semester sollte ich "Informationskompetenz" belegen?
+Gibt es eine Übersicht über alle Lehrpersonen im Data Science Studiengang?
+Was sind die Voraussetzungen für das Modul "Advanced Data Analysis"?
+Kann ich während meines Studiums ein Praktikum machen?
+Welche Bücher sind für das Modul "Statistik" empfohlen?
+Wie ist der Schwierigkeitsgrad von "Algorithmen und Datenstrukturen"?
+Was lernt man in "Machine Learning"?
+Sind die Prüfungen in "Informationswissenschaften" schriftlich oder mündlich?
+Gibt es Online-Ressourcen für das Selbststudium in "Informationskompetenz"?
+Wie oft trifft man sich im Modul "Interaktive Visualisierungen"?
+Welche Themen werden in "Einführung in die Datenwissenschaft" behandelt?
+Muss ich für "Lineare Algebra" eine Programmiersprache beherrschen?
+Wie viele Projekte muss man in "Software Engineering" abschließen?
+Welche Rolle spielt "Datenanalyse" im Gesamtstudium?
+Kann ich "Machine Learning" im Sommersemester belegen?
+Sind die Vorlesungen in "Programmierung" für Anfänger geeignet?
+Ist das Modul "Künstliche Intelligenz" Teil des Data Science Studiums?
+Wie anspruchsvoll ist das Modul "Statistische Datenanalyse"?
+Welche Themen deckt der Kurs "Datenbanken" ab?
+Kann ich als Austauschstudent an den Modulen "Maschinelles Lernen" teilnehmen?
+Wie viele Stunden pro Woche muss man für "Algorithmen und Datenstrukturen" aufwenden?
+Brauche ich Vorkenntnisse in Programmierung für "Informationswissenschaften"?
+Welche Software-Tools werden im Modul "Interaktive Visualisierungen" verwendet?
+Wie ist das Prüfungsformat von "Lineare Algebra"?
+Gibt es Tutorien für das Modul "Einführung in die Datenwissenschaft"?
+Welche Sprachen muss man für "Informationskompetenz" beherrschen?
+Wie interaktiv sind die Kurse in "Software Engineering"?
+Ist "Machine Learning" mehr praktisch oder theoretisch orientiert?
+Welche Projekte kann ich im Modul "Datenanalyse" erwarten?
+Können Erstsemester "Statistische Datenanalyse" belegen?
+Wie werden die Leistungen in "Datenbanken" bewertet?
+Sind Gruppenarbeiten im Kurs "Künstliche Intelligenz" erforderlich?
+Wie umfangreich ist die Literaturliste für "Programmierung"?
+Welche Themen aus "Informationskompetenz" sind am wichtigsten?
+Können Nicht-Informatiker "Algorithmen und Datenstrukturen" verstehen?
+Was sind die Hauptziele des Moduls "Advanced Data Analysis"?

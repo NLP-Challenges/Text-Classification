@@ -166,3 +166,7 @@ bert-classifier/
 .DS_Store
 chatbot-classification/
 artifacts/
+svc_model/
+
+.idea/
+BertWithSyntheticData/
